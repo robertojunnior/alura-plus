@@ -1,0 +1,54 @@
+@media screen and (max-width: 72rem) {
+    .container {
+        display: block;
+        background-image: none;
+    }
+
+    .principal {
+        height: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .secondary {
+        text-align: center;
+        height: 100%;
+        margin: 5rem auto;
+    }
+
+    .secondary__imagem {
+        width: 50vw;
+    }
+
+    .descricao__titulo {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .rodape__logo {
+        padding: 1rem;
+    }
+
+    .container__imagem {
+        width: 50vw;
+    }
+
+    .container__caixa {
+        margin: 2rem 2rem;
+    }
+
+    .imagem--telas {
+        text-align: center;
+    }
+
+    .dispositivos__titulo {
+        font-size: 2rem;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .rodape__lista {
+        display: block;
+    }
+}

@@ -1,0 +1,184 @@
+/*como regra, começo aqui o aprendizado do uso do BEM no CSS*/
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #01c76e;
+    --color-btn: #167BF7;
+    --color-bkg: #00030C;
+    --font-principal: 'inter', sans-serif;
+    --color-gradient: linear-gradient(109.8deg, #01C76E 20.69%, #0D4080 110.8%);
+    --color-rodape: linear-gradient(117deg, rgba(15, 47, 73, 0.31) 20.39%, rgba(13, 63, 126, 0.98532) 64.49%, #01C76E 102.46%);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-bkg);
+    color: var(--color-primary);
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--color-primary);
+}
+
+.principal {
+    background-image: url(../assets/instrutores.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1rem 0 2rem 0;
+}
+
+.container__btn {
+    display: block;
+    background: var(--color-gradient);
+    padding: 1em;
+    border-radius: 8px;
+    color: var(--color-primary);
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.container__btn:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.secondary--btn {
+    background: transparent;
+    border: 2px solid var(--color-secondary);
+}
+
+.secondary--btn:hover {
+    background: #01c76e56;
+    border: 2px solid var(--color-secondary);
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+}
+
+.container__caixa {
+    margin: 0 6rem;
+}
+
+.secondary {
+    height: 70vh;
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.secondary__imagem {
+    width: 80%;
+}
+
+.secondary__imagem:hover {
+    transform: scale(1.02);
+    transition: 1s;
+}
+
+.imagem--telas {
+   text-align: right;
+}
+
+.descricao__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    
+    background-image: var(--color-gradient);
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 0.1rem;
+}
+
+.descricao__texto {
+    font-size: 1.25rem;
+}
+
+.secondary--btn-assine {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.container__descricao {
+    padding: 1rem;
+}
+
+.dispositivos {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.dispositivos__titulo {
+    font-size: 3.25rem;
+    background-image: var(--color-gradient);
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 4rem 0 6rem;
+}
+
+.lista__item {
+    font-size: 2rem;
+}
+
+.rodape {
+    background: var(--color-rodape);
+    text-align: center;
+    padding: 2rem;
+}
+
+.rodape__logo {
+    width: 100px;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    list-style-type: none;
+}
+
+.lista__link a {
+    text-decoration: none;
+}
+
+.lista__link a:hover {
+    color: var(--color-btn);
+}
+
+.rodape__texto {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.75rem;
+}
